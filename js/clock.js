@@ -1,4 +1,4 @@
-const clock = document.querySelector("h2");
+const clock = document.querySelector("h2 #clock");
 
 nowTime = () => {
     const date = new Date();
@@ -9,4 +9,5 @@ nowTime = () => {
     clock.innerText = `${hours} : ${minutes} : ${seconds}`
 };
 
+nowTime();
 setInterval(nowTime, 1000);

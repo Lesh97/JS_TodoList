@@ -1,4 +1,4 @@
-const clock = document.querySelector("h2 #clock");
+const clock = document.querySelector("h2#clock");
 
 nowTime = () => {
     const date = new Date();
@@ -6,7 +6,7 @@ nowTime = () => {
     const minutes = String(date.getMinutes()).padStart(2, "0");
     const seconds = String(date.getSeconds()).padStart(2, "0");
 
-    clock.innerText = `${hours} : ${minutes} : ${seconds}`
+    clock.innerText = `${hours} : ${minutes} : ${seconds}`;
 };
 
 nowTime();

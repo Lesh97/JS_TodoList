@@ -35,14 +35,18 @@ paintTodo = (newTodo) => {
 handleTodoSubmit = (event) => {
     event.preventDefault();
     const newTodo = toDoInput.value;
-    toDoInput.value = "";
-    const newTodoObj = {
-        text : newTodo,
-        id : Date.now(),
-    };
-    toDos.push(newTodoObj);
-    paintTodo(newTodoObj);
-    saveTodos();
+    if (newTodo === "") {
+        alert("write todos");
+    }else {
+        toDoInput.value = "";
+        const newTodoObj = {
+            text : newTodo,
+            id : Date.now(),
+        };
+        toDos.push(newTodoObj);
+        paintTodo(newTodoObj);
+        saveTodos();
+    }
 }
 
 toDoForm.addEventListener("submit", handleTodoSubmit);

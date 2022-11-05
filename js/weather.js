@@ -1,6 +1,5 @@
-const API_KEY = config.apikey;
-
 onGeolocation = (position) => {
+    const API_KEY = config.apikey;
     const lat = position.coords.latitude;
     const lng = position.coords.longitude;
     console.log("You live in", lat, lng);

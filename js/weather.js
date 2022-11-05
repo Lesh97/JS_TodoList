@@ -1,4 +1,4 @@
-const API_KEY = "";
+const API_KEY = config.apikey;
 
 onGeolocation = (position) => {
     const lat = position.coords.latitude;

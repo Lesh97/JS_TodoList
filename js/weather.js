@@ -1,12 +1,8 @@
-import {config} from './apikey.js';
-
-const API_KEY = config.apikey;
+const API_KEY = "0019fd7a0ed2cc1a11d99d741345006b";
 
 onGeolocation = (position) => {   
     const lat = position.coords.latitude;
     const lng = position.coords.longitude;
-    console.log("You live in", lat, lng);
-
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric`
     fetch(url)
     .then((response) => response.json())

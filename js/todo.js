@@ -1,6 +1,8 @@
 const toDoForm = document.getElementById("todo-form");
 const toDoInput = toDoForm.querySelector("input");
 const toDoList = document.getElementById("todo-list");
+const inputTodo = document.querySelector(".input-todo");
+const listBox = document.querySelector(".list-box");
 const dimContainer = document.getElementById("dim-container");
 const dimPop = document.getElementById("dimmed");
 
@@ -39,8 +41,11 @@ handleTodoSubmit = (event) => {
   if (newTodo === "") {
     dimContainer.style.opacity = 0.8;
     dimPop.classList.remove(HIDDEN_CLASSNAME1);
+    inputTodo.disabled = true;
+    listBox.style.zIndex = 1;
   } else {
     toDoInput.value = "";
+
     const newTodoObj = {
       text: newTodo,
       id: Date.now(),
@@ -54,6 +59,8 @@ handleTodoSubmit = (event) => {
 handlePopClick = (event) => {
   dimPop.classList.add(HIDDEN_CLASSNAME1);
   dimContainer.style.opacity = 0;
+  inputTodo.disabled = false;
+  listBox.style.zIndex = 2;
 };
 
 toDoForm.addEventListener("click", handlePopClick);

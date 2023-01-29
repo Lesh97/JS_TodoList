@@ -224,7 +224,7 @@ input:focus {
   top: 72%;
   left: 11%;
   overflow-y: auto;
-  z-index: 3;
+  z-index: 2;
 }
 
 .list-box::-webkit-scrollbar {
@@ -273,7 +273,6 @@ button {
   border-bottom: 3px solid var(--main-color);
   color: var(--main-color);
   font-size: 35px;
-  z-index: 3;
 }
 
 #quote {

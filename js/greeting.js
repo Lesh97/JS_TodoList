@@ -23,7 +23,7 @@ function paintGreetings() {
   const username = localStorage.getItem(USERNAME_KEY);
   greeting.classList.remove(HIDDEN_CLASSNAME);
   todoForm.classList.remove(HIDDEN_CLASSNAME);
-  greeting.innerText = `안녕하세요. ${username}, 오늘은 어떤 하루를 보낼까요?`;
+  greeting.innerText = `안녕하세요. ${username}님, 오늘은 어떤 하루를 보낼까요?`;
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../momentum/css/style.css" />
+    <title>Momentum App</title>
+  </head>
+  <body>
+    <form class="hidden" id="login-form">
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="What is your name?"
+      />
+      <input type="submit" value="Log In" />
+    </form>
+
+    <h1 id="greeting" class="hidden"></h1>
+
+    <h2 id="clock">00 : 00 : 00</h2>
+
+    <div class="clock">
+      <div class="lineHour"></div>
+      <div class="lineMin"></div>
+      <div class="lineSec"></div>
+    </div>
+
+    <div id="dim-container">
+      <div id="dimmed" class="hidden">
+        아무 것도 적지 않았습니다. To-do를 작성해주세요.
+      </div>
+    </div>
+    <form id="todo-form" class="hidden">
+      <input
+        class="input-todo"
+        type="text"
+        placeholder="Write a To Do and Press Enter"
+      />
+    </form>
+    <div class="list-box">
+      <ul id="todo-list"></ul>
+    </div>
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quote.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script
+      src="https://kit.fontawesome.com/70782ef41a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </body>
+</html>

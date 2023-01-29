@@ -1,6 +1,6 @@
 # 자바스크립트로 Todo List 만들기
 
-사용한 언어 : Html, CSS, JavaScript
+사용한 언어 : Html, CSS, JavaScript  
 API : Weather API (OpenWeatherMap API)
 
 현재시간을 알려주는 기능   
